@@ -18,6 +18,14 @@ my-hello-script = 'modern_python_2024_demo:hello'
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+[tool.ruff]
+# Set the maximum line length to 79.
+line-length = 79
+
+[tool.ruff.lint]
+# Add the `line-too-long` rule to the enforced rule set.
+extend-select = ["E501"]
+
 [tool.rye]
 managed = true
 dev-dependencies = [
