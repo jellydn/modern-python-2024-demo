@@ -1,0 +1,35 @@
+[project]
+name = "modern-python-2024-demo"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Huynh Duc Dung", email = "dunghd.it@gmail.com" }
+]
+dependencies = [
+    "fastapi>=0.110.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[project.scripts]
+my-hello-script = 'modern_python_2024_demo:hello'
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "uvicorn[standard]>=0.28.0",
+    "pytest>=8.1.1",
+]
+
+[tool.rye.scripts]
+devserver = "uvicorn main:app --app-dir src/modern_python_2024_demo --reload"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/modern_python_2024_demo"]
