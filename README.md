@@ -26,6 +26,8 @@
   rye run devserver
 ```
 
+[![Run dev command](https://i.gyazo.com/aece13aeaf4ab3b984ea04d3c3137113.gif)](https://gyazo.com/aece13aeaf4ab3b984ea04d3c3137113)
+
 ## Run tests
 
 ```sh
@@ -38,11 +40,15 @@
   rye fmt
 ```
 
+[![Format code](https://i.gyazo.com/a8765a6625a1adc5287f108ae6f43214.png)](https://gyazo.com/a8765a6625a1adc5287f108ae6f43214)
+
 ## Lint code
 
 ```sh
   rye lint
 ```
+
+[![Lint code](https://i.gyazo.com/2a87caee50e46ef96dbd4b940b0506f9.png)](https://gyazo.com/2a87caee50e46ef96dbd4b940b0506f9)
 
 ## Docker
 
