@@ -6,6 +6,8 @@
 [![Rye](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/rye/main/artwork/badge.json)](https://rye-up.com)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
+[![IT Man - Modern development with Python in 2024](https://i.ytimg.com/vi/A8xdhC_0Hcc/hqdefault.jpg)](https://www.youtube.com/watch?v=A8xdhC_0Hcc)
+
 ## Pre-requisites
 
 - [astral-sh/rye: a Hassle-Free Python Experience](https://github.com/astral-sh/rye)
