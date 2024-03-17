@@ -3,6 +3,8 @@
   This project is a demo for modern Python 2024 with FastAPI. The project also utilizes the rye, uv, and ruff packages for a hassle-free Python experience.
 </p>
 
+[![Rye](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/rye/main/artwork/badge.json)](https://rye-up.com)
+
 ## Pre-requisites
 
 - [astral-sh/rye: a Hassle-Free Python Experience](https://github.com/astral-sh/rye)
@@ -38,6 +40,10 @@
 ```sh
   rye lint
 ```
+
+## Docker
+
+- [ ] TBD ([Rye + Docker · astral-sh/rye · Discussion #239](https://github.com/astral-sh/rye/discussions/239))
 
 ## Resources
 
