@@ -59,6 +59,12 @@ docker-compose up
 
 Refer [Docker](https://rye-up.com/guide/docker/) for more information.
 
+## Deploy to Fly.io
+
+```sh
+fly launch
+```
+
 ## Resources
 
 - [Introduction - Rye](https://rye-up.com/guide/)

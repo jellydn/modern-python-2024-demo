@@ -1,0 +1,28 @@
+# flyctl launch added from .gitignore
+# python generated files
+**/__pycache__
+**/*.py[oc]
+**/build
+**/dist
+**/wheels
+**/*.egg-info
+
+# venv
+**/.venv
+
+# Nodejs Dependency directories
+**/node_modules
+**/jspm_packages
+
+**/typings
+
+# flyctl launch added from .pytest_cache/.gitignore
+# Created by pytest automatically.
+.pytest_cache/**/*
+
+# flyctl launch added from .ruff_cache/.gitignore
+.ruff_cache/**/*
+
+# flyctl launch added from .venv/.gitignore
+.venv/**/*
+fly.toml

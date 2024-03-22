@@ -8,4 +8,4 @@ RUN pip install -r requirements.txt
 COPY /src/modern_python_2024_demo /app
 RUN pip install "uvicorn[standard]"
 
-CMD ["uvicorn", "main:app", "--app-dir", "/app" , "--host", "0.0.0.0"]
+CMD ["uvicorn", "main:app", "--app-dir", "/app" , "--host", "0.0.0.0", "--port", "8000"]
