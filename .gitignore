@@ -13,3 +13,4 @@ wheels/
 node_modules/
 jspm_packages/
 
+typings
