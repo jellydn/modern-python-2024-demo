@@ -1,6 +1,13 @@
-devserver
 Huynh
+fastapi
+uvicorn
+pytest
+basedpyright
+devserver
+pycache
+venv
+pyright
+pylance
 jellydn
 kofi
 buymeacoffee
-fastapi
