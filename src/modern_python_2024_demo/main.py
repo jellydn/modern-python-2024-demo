@@ -9,6 +9,11 @@ def read_root():
     return {"Hello": "World"}
 
 
+@app.get("/health")
+def health_check():
+    return {"status": "ok", "message": "I'm alive"}
+
+
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q: Union[str, None] = None):
     return {"item_id": item_id, "q": q}
