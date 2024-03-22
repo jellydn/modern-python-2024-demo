@@ -18,6 +18,7 @@
 
 ```sh
   rye sync
+  rye run basedpyright --createStub fastapi
 ```
 
 ## Usage
@@ -52,7 +53,11 @@
 
 ## Docker
 
-- [ ] TBD ([Rye + Docker · astral-sh/rye · Discussion #239](https://github.com/astral-sh/rye/discussions/239))
+```sh
+docker-compose up
+```
+
+Refer [Docker](https://rye-up.com/guide/docker/) for more information.
 
 ## Resources
 
@@ -60,6 +65,7 @@
 - [Announcing Astral, the company behind Ruff](https://astral.sh/blog/announcing-astral-the-company-behind-ruff)
 - [The Ruff Formatter: An extremely fast, Black-compatible Python formatter](https://astral.sh/blog/the-ruff-formatter)
 - [uv: Python packaging in Rust](https://astral.sh/blog/uv)
+- [DetachHead/basedpyright: pyright fork with various type checking improvements, improved vscode support and pylance features built into the language server](https://github.com/DetachHead/basedpyright)
 - [FastAPI](https://fastapi.tiangolo.com/)
 
 ## Author
