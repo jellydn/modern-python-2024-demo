@@ -2,12 +2,8 @@
 name = "modern-python-2024-demo"
 version = "0.1.0"
 description = "Add your description here"
-authors = [
-    { name = "Huynh Duc Dung", email = "dunghd.it@gmail.com" }
-]
-dependencies = [
-    "fastapi>=0.110.0",
-]
+authors = [{ name = "Huynh Duc Dung", email = "dunghd.it@gmail.com" }]
+dependencies = ["fastapi>=0.110.0"]
 readme = "README.md"
 requires-python = ">= 3.8"
 
@@ -29,12 +25,30 @@ extend-select = ["E501"]
 [tool.rye]
 managed = true
 dev-dependencies = [
-    "uvicorn[standard]>=0.28.0",
-    "pytest>=8.1.1",
+  "uvicorn[standard]>=0.28.0",
+  "pytest>=8.1.1",
+  "basedpyright>=1.6.1",
 ]
 
 [tool.rye.scripts]
 devserver = "uvicorn main:app --app-dir src/modern_python_2024_demo --reload"
+
+[tool.basedpyright]
+include = ["src"]
+exclude = ["**/node_modules", "**/__pycache__", "typings"]
+stubPath = "typings"
+defineConstant = { DEBUG = true }
+
+reportMissingImports = true
+reportMissingModuleSource = false
+reportMissingTypeStubs = true
+reportUnknownMemberType = false
+
+pythonVersion = "3.8"
+pythonPlatform = "Linux"
+
+executionEnvironments = [{ root = "src" }]
+venvPath = ".venv"
 
 [tool.hatch.metadata]
 allow-direct-references = true

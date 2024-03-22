@@ -13,6 +13,7 @@ annotated-types==0.6.0
 anyio==4.3.0
     # via starlette
     # via watchfiles
+basedpyright==1.6.1
 click==8.1.7
     # via uvicorn
 exceptiongroup==1.2.0
@@ -28,6 +29,8 @@ idna==3.6
     # via anyio
 iniconfig==2.0.0
     # via pytest
+nodejs-bin==18.4.0a4
+    # via basedpyright
 packaging==24.0
     # via pytest
 pluggy==1.4.0
