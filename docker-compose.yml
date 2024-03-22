@@ -1,0 +1,19 @@
+version: "3"
+services:
+  traefik:
+    restart: unless-stopped
+    image: traefik:latest
+    command: --providers.docker=true
+    ports:
+      - "80:80"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+  python-demo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    labels:
+      - "traefik.http.routers.python-demo.rule=Host(`python-demo.traefik.me`)"
+      - "traefik.http.services.python-demo.loadbalancer.server.port=8000"
+    environment:
+      PORT: 8000
